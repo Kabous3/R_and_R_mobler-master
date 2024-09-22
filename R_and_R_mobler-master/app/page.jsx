@@ -1,15 +1,12 @@
-import Hero from "./components/Hero"
-import "./globals.css"
-import Login from "./components/login";
-import Payment from "./components/payment";
+import Image from "next/image";
+import Hero from "./_components/Hero";
+import ProductSection from "./_components/ProductSection";
 
-export const metadata = {
-    title: "Hem sida",
-};
-
-export default function Page() {
-    return (<>
-            < Payment/>
-            </>
-    )
+export default function Home() {
+  return (
+    <div>
+      <Hero />
+      <ProductSection />
+    </div>
+  );
 }
